@@ -5,7 +5,8 @@ import java.util.TreeMap;
 
 public class FindTotalOfCarFleetFunction {
     public int carFleet(int target, int[] position, int[] speed) {
-        TreeMap<Double, Double> sortedMap = new TreeMap<>();
+    	// O(log(n))
+        TreeMap<Double, Double> sortedMap = new TreeMap<>(); // Sort by key
         
         for(int i = 0; i < position.length; i++){
         	// Key is the distance left to target
