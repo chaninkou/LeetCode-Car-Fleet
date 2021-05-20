@@ -33,6 +33,7 @@ public class FindTotalOfCarFleetFunction {
         return totalFleet;
     }
     
+    // Use negative as key for treemap for biggest at the beginning.
     public int carFleet2(int target, int[] position, int[] speed) {
         TreeMap<Integer, Double> sortedMap = new TreeMap<>();
         
